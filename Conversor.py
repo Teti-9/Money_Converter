@@ -134,21 +134,21 @@ def conversor():
     if e_coin.get() == "usd" or e_coin.get() == "USD" or e_coin.get() == "Usd":
         usd = float(e_value.get()) * 1
         usd_label.set(("{:.2f}".format(usd)))
-        eur = float(e_value.get()) * 0.85
+        eur = float(e_value.get()) * 0.86
         eur_label.set(("{:.2f}".format(eur)))
-        real = float(e_value.get()) * 5.51
+        real = float(e_value.get()) * 5.61
         real_label.set(("{:.2f}".format(real)))
     elif e_coin.get() == "eur" or e_coin.get() == "EUR" or e_coin.get() == "Eur":
         usd = float(e_value.get()) * 1.17
         usd_label.set(("{:.2f}".format(usd)))
         eur = float(e_value.get()) * 1
         eur_label.set(("{:.2f}".format(eur)))
-        real = float(e_value.get()) * 6.40
+        real = float(e_value.get()) * 6.54
         real_label.set(("{:.2f}".format(real)))
     elif e_coin.get() == "real" or e_coin.get() == "REAL" or e_coin.get() == "Real":
         usd = float(e_value.get()) * 0.18
         usd_label.set(("{:.2f}".format(usd)))
-        eur = float(e_value.get()) * 0.16
+        eur = float(e_value.get()) * 0.15
         eur_label.set(("{:.2f}".format(eur)))
         real = float(e_value.get()) * 1
         real_label.set(("{:.2f}".format(real)))
@@ -187,7 +187,7 @@ def entryvalue():
     )
     moeda = e_coin.get()
     try:
-        valor = int(e_value.get())
+        valor = float(e_value.get())
         moedas = ("USD", "EUR", "REAL", "usd", "eur", "real", "Usd", "Eur", "Real")
         if not e_coin.get():
             messagebox.showerror(title="Erro!", message="Insira uma moeda correta!")
