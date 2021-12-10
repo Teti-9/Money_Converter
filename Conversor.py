@@ -8,13 +8,13 @@ def conversor():
     global eur_label
     global real_label
     USFlag = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\USAFlag.png"
+        file="directory/icons"
     )
     EUFlag = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\EUFlag.png"
+        file="directory/icons"
     )
     BRFlag = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\BRFlag.png"
+        file="directory/icons"
     )
     usd_label = IntVar()
     eur_label = IntVar()
@@ -177,13 +177,13 @@ def entryvalue():
     global valor
     global moeda
     USFlag = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\USAFlag1.png"
+        file="directory/icons"
     )
     EUFlag = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\EUFlag1.png"
+        file="directory/icons"
     )
     BRFlag = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\BRFlag1.png"
+        file="directory/icons"
     )
     moeda = e_coin.get()
     try:
@@ -242,10 +242,10 @@ def value():
     global QMFlag
     global cifrao
     QMFlag = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\questionmark.png"
+        file="directory/icons"
     )
     cifrao = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\cifrao.png"
+        file="directory/icons"
     )
     valor = ""
     moeda = ""
@@ -341,7 +341,7 @@ def mainscreen():
     root.geometry("320x495")
     root.config(bg="white")
     icon = PhotoImage(
-        file="C:\\Users\\Teti\\Desktop\\Programação\\Projects\\Codes\\Projects\\Icons\\coin.png"
+        file="directory/icons"
     )
     root.iconphoto(True, icon)
     value()
